@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Capstone Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="3" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="tests.SelectHotelTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="testSelectHotelAndContinue"/>
+          <include name="reportClose"/>
+          <include name="testContinueWithoutSelection"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SelectHotelTest -->
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="screenshot"/>
+          <include name="setup"/>
+          <include name="refreshPage"/>
+          <include name="reportClose"/>
+          <include name="testResetFunctionality"/>
+          <include name="setupReport"/>
+          <include name="testRegistration"/>
+        </methods>
+      </class> <!-- tests.RegisterTest -->
+      <class name="tests.SearchHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="screenshot"/>
+          <include name="searchHotelTests"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SearchHotelTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="tesLoginFunction"/>
+          <include name="screenshot"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ItineraryTest">
+        <methods>
+          <include name="accessMyItinerary"/>
+          <include name="cancelBooking"/>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="cancelAlreadyCanceledBooking"/>
+          <include name="searchOrderId"/>
+          <include name="screenshot"/>
+          <include name="reportClose"/>
+          <include name="confirmBookingAndFetchOrderId"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.ItineraryTest -->
+      <class name="tests.BookHotelTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="bookHotelTests"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.BookHotelTest -->
+      <class name="tests.LogoutTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="refreshAfterLogout"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="testLogoutWithInvalidSession"/>
+          <include name="testDirectLogoutWithoutLogin"/>
+          <include name="logoutBtnVisible"/>
+          <include name="reportClose"/>
+          <include name="loginBeforeTest"/>
+          <include name="testLogoutInMultipleTabs"/>
+          <include name="setupReport"/>
+          <include name="validLogout"/>
+        </methods>
+      </class> <!-- tests.LogoutTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="3" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.SelectHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="screenshot"/>
+          <include name="testSelectHotelAndContinue"/>
+          <include name="reportClose"/>
+          <include name="testContinueWithoutSelection"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SelectHotelTest -->
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="refreshPage"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="testResetFunctionality"/>
+          <include name="setupReport"/>
+          <include name="testRegistration"/>
+        </methods>
+      </class> <!-- tests.RegisterTest -->
+      <class name="tests.SearchHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="screenshot"/>
+          <include name="searchHotelTests"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SearchHotelTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="tesLoginFunction"/>
+          <include name="screenshot"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ItineraryTest">
+        <methods>
+          <include name="accessMyItinerary"/>
+          <include name="cancelBooking"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="cancelAlreadyCanceledBooking"/>
+          <include name="screenshot"/>
+          <include name="searchOrderId"/>
+          <include name="confirmBookingAndFetchOrderId"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.ItineraryTest -->
+      <class name="tests.BookHotelTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="bookHotelTests"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.BookHotelTest -->
+      <class name="tests.LogoutTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="refreshAfterLogout"/>
+          <include name="screenshot"/>
+          <include name="testLogoutWithInvalidSession"/>
+          <include name="testDirectLogoutWithoutLogin"/>
+          <include name="logoutBtnVisible"/>
+          <include name="reportClose"/>
+          <include name="loginBeforeTest"/>
+          <include name="testLogoutInMultipleTabs"/>
+          <include name="setupReport"/>
+          <include name="validLogout"/>
+        </methods>
+      </class> <!-- tests.LogoutTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="3" parallel="tests" name="ChromeTest(failed)">
+    <classes>
+      <class name="tests.SelectHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="screenshot"/>
+          <include name="testSelectHotelAndContinue"/>
+          <include name="reportClose"/>
+          <include name="testContinueWithoutSelection"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SelectHotelTest -->
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="refreshPage"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="testResetFunctionality"/>
+          <include name="setupReport"/>
+          <include name="testRegistration"/>
+        </methods>
+      </class> <!-- tests.RegisterTest -->
+      <class name="tests.SearchHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="screenshot"/>
+          <include name="searchHotelTests"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SearchHotelTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="tesLoginFunction"/>
+          <include name="screenshot"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ItineraryTest">
+        <methods>
+          <include name="cancelBooking"/>
+          <include name="accessMyItinerary"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="searchOrderId"/>
+          <include name="cancelAlreadyCanceledBooking"/>
+          <include name="screenshot"/>
+          <include name="reportClose"/>
+          <include name="confirmBookingAndFetchOrderId"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.ItineraryTest -->
+      <class name="tests.BookHotelTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="bookHotelTests"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.BookHotelTest -->
+      <class name="tests.LogoutTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="refreshAfterLogout"/>
+          <include name="screenshot"/>
+          <include name="testDirectLogoutWithoutLogin"/>
+          <include name="testLogoutWithInvalidSession"/>
+          <include name="logoutBtnVisible"/>
+          <include name="reportClose"/>
+          <include name="testLogoutInMultipleTabs"/>
+          <include name="loginBeforeTest"/>
+          <include name="validLogout"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.LogoutTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="3" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="tests.SelectHotelTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="screenshot"/>
+          <include name="testSelectHotelAndContinue"/>
+          <include name="reportClose"/>
+          <include name="testContinueWithoutSelection"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SelectHotelTest -->
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="refreshPage"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="testResetFunctionality"/>
+          <include name="setupReport"/>
+          <include name="testRegistration"/>
+        </methods>
+      </class> <!-- tests.RegisterTest -->
+      <class name="tests.SearchHotelTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="screenshot"/>
+          <include name="searchHotelTests"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.SearchHotelTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="tesLoginFunction"/>
+          <include name="screenshot"/>
+          <include name="setup"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ItineraryTest">
+        <methods>
+          <include name="cancelBooking"/>
+          <include name="accessMyItinerary"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="cancelAlreadyCanceledBooking"/>
+          <include name="screenshot"/>
+          <include name="searchOrderId"/>
+          <include name="reportClose"/>
+          <include name="confirmBookingAndFetchOrderId"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.ItineraryTest -->
+      <class name="tests.LogoutTest">
+        <methods>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="browserquit"/>
+          <include name="refreshAfterLogout"/>
+          <include name="screenshot"/>
+          <include name="testLogoutWithInvalidSession"/>
+          <include name="testDirectLogoutWithoutLogin"/>
+          <include name="logoutBtnVisible"/>
+          <include name="reportClose"/>
+          <include name="testLogoutInMultipleTabs"/>
+          <include name="loginBeforeTest"/>
+          <include name="validLogout"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.LogoutTest -->
+      <class name="tests.BookHotelTest">
+        <methods>
+          <include name="browserquit"/>
+          <include name="launchingBrowserandLoadingURL"/>
+          <include name="bookHotelTests"/>
+          <include name="screenshot"/>
+          <include name="reportClose"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- tests.BookHotelTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Capstone Suite] -->
