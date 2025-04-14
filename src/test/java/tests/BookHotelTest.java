@@ -37,18 +37,8 @@ public class BookHotelTest extends ProjectSpecification {
     public Object[][] getBookingData() throws Exception {
         return Utility.getDataExcel("BookHotelDetails");
     }
-
-    @DataProvider(name= "bookingData")
-    public Object[][]bookingData(){
-    	return new Object[][] {
-    		{"Mokthi", "Doe", "123 Street", "4111111111111111", "VISA", "March", "2026", "123"},
-    		{"  ", "Magesh", "123 Street", "542", "VISA", "March", "2026", "123"},
-    		{"Divya", "Magesh", "123 Street", "4111111111111111", "VISA", "Test", "2026", "123"},
-            {"Mimi", " ", "123 Street", "4111111111111111", "VISA", "March", "2023", "123"},
-            {"@#$%^&", "Princy", "123 Street", "4111111111111111", "VISA", "March", "2026", "xxx"}
-    	};
-    }
-    @Test(priority = 1 ,dataProvider = "bookingData")
+    
+    @Test(priority = 1 ,dataProvider = "BookHotelDetails")
    // @Test(priority = 1 ,dataProvider = "BookHotelDetails")
     public void bookHotelTests(String fname, String lname, String addr, String cc, String type, String month,
 			String year, String cvvNum) throws InterruptedException {
@@ -67,11 +57,11 @@ public class BookHotelTest extends ProjectSpecification {
         select.selectHotelAndContinue();
         Thread.sleep(5000);
      
-        // Capture the hotel details before proceeding with the booking
+        //Capture the hotel details before proceeding with the booking
    
-        /*WebElement selectedHotelNameElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".selected-hotel-name")));
-        String selectedHotelName = selectedHotelNameElement.getText();
-        System.out.println("Hotel Name: " + selectedHotelName);
+        //WebElement selectedHotelNameElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".selected-hotel-name")));
+        //String selectedHotelName = selectedHotelNameElement.getText();
+        //System.out.println("Hotel Name: " + selectedHotelName);
 
         String selectedRoomType = select.getSelectedRoomType();
         System.out.println("Hotel :" +selectedRoomType);
@@ -81,7 +71,7 @@ public class BookHotelTest extends ProjectSpecification {
         
         String selectedPrice = select.getSelectedPrice();
         System.out.println("Hotel :" +selectedPrice);
-        */
+        
      // Step 4: Book Hotel
         BookHotelPage book = new BookHotelPage(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -106,7 +96,6 @@ public class BookHotelTest extends ProjectSpecification {
         alert.dismiss();
 
         //Validation
-       /* if (expectedResult.equalsIgnoreCase("Valid")) {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
             String orderIdBooking = book.getOrderNumber();
@@ -114,20 +103,19 @@ public class BookHotelTest extends ProjectSpecification {
             System.out.println("Booking successful. Order ID: " + orderIdBooking);
 
             // Validate hotel details
-            /*Assert.assertEquals(book.getHotelName(), selectedHotelName, "Hotel name mismatch");
+           // Assert.assertEquals(book.getHotelName(), selectedHotelName, "Hotel name mismatch");
             Assert.assertEquals(book.getRoomType(), selectedRoomType, "Room type mismatch");
-            Assert.assertEquals(book.getHotelLocation(), selectedLocation, "Location mismatch");
+            Assert.assertEquals(book.getHotelLocation(), selectedHotelLocation, "Location mismatch");
             Assert.assertEquals(book.getTotalPrice(), selectedPrice, "Price mismatch");
 
             System.out.println("All booking details match the selection.");
-        } else {
+
         	// CONFIRM_01 - Wait for order number (Booking Confirmation)
         	String errorMessage = book.getErrorMessage();
             Assert.assertTrue(errorMessage.contains("Please") || errorMessage.length() > 0,
                     "Expected an error message but none found.");
             System.out.println("Booking failed as expected. Error: " + errorMessage);
-        }
-        
+       
             // CONFIRM_02 - Match confirmation data with selected hotel
          // Capture the confirmation details
             String confirmedHotelName = book.getHotelName();
@@ -135,15 +123,14 @@ public class BookHotelTest extends ProjectSpecification {
             String confirmedHotelLocation = book.getHotelLocation();
             String confirmedPrice = book.getTotalPrice();
 
-             /*Assertions to verify that the details match
-            Assert.assertEquals(confirmedHotelName, selectedHotelName, "Hotel name does not match!");
+             //Assertions to verify that the details match
+            //Assert.assertEquals(confirmedHotelName, selectedHotelName, "Hotel name does not match!");
             Assert.assertEquals(confirmedRoomType, selectedRoomType, "Room type does not match!");
             Assert.assertEquals(confirmedHotelLocation, selectedHotelLocation, "Hotel location does not match!");
             Assert.assertEquals(confirmedPrice, selectedPrice, "Price does not match!");
-            */
+            
         
     }
-
     @Test(priority = 2)
     public void testCancelButtonFunctionality() throws InterruptedException {
     	
