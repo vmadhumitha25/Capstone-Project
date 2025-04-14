@@ -18,34 +18,18 @@ import com.aventstack.extentreports.Status;
 import base.ProjectSpecification;
 
 public class Listener extends ProjectSpecification implements ITestListener {
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		test.log(Status.PASS, "Test Passed");
-		String screenShotpath = null;
-		try {
-			screenShotpath = screenshot(result.getMethod().getMethodName() + " pass");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		test.addScreenCaptureFromPath(screenShotpath, "Passed Test Screenshot");
-	}
-
-	@Override
-	public void onTestFailure(ITestResult result) {
-		test.fail(result.getThrowable());
-
-		String screenShotpath = null;
-		try {
-			screenShotpath = screenshot(result.getMethod().getMethodName() + " fail");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		test.addScreenCaptureFromPath(screenShotpath, "Failed Test Screenshot");
-
-	}
+	 public void TestSuccess(ITestResult result) throws IOException {
+	    	test.log(Status.PASS, "Test Passed");
+	    	String screenshotPath = null;
+	    	//screenshotPath = screenshot(result.getMethod().getMethodName() + " Pass");
+	    	test.addScreenCaptureFromPath(screenshotPath, "Passed Test Screenshot");
+	    }
+	    
+	    public void TestFailure(ITestResult result) throws IOException {
+	    	test.log(Status.FAIL, "Test Failed");
+	    	String screenshotPath = null;
+	    	//screenshotPath = screenshot(result.getMethod().getMethodName() + " Fail");
+	    	test.addScreenCaptureFromPath(screenshotPath, "Failure Screenshot");
+	    }
 
 }

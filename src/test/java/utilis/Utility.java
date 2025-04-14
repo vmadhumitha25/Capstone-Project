@@ -7,8 +7,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
@@ -55,7 +57,7 @@ public class Utility {
 
 	public static String[][] getDataExcel(String sheetname) throws Exception {
 		XSSFWorkbook book = new XSSFWorkbook(
-				"C:\\Users\\madhu\\eclipse-workspace\\Capstone-Project\\src\\test\\resources\\Capstone-Project.xlsx");
+				"C:\\Users\\madhu\\eclipse-workspace\\Capstone-Project\\src\\test\\resources\\Capstone-Project-Data.xlsx");
 		XSSFSheet sheet = book.getSheet(sheetname);
 		int rowCount = sheet.getLastRowNum();
 		System.out.println("Row count: "+rowCount);
@@ -78,6 +80,28 @@ public class Utility {
 		return data;
 	}
 
+
+	private static Properties properties;
+		//Load the config file
+	static {
+		try {
+			FileInputStream file = new FileInputStream("src/test/resources/config.properties");
+			properties = new Properties();  //Creating object
+			properties.load(file);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			throw new RuntimeException("Failed to Load the config properties file" +e.getMessage());
+		}
+	}
+	//property key to fecth the value and return the correspoding property value
+	public static String getProperty(String key) {
+	    if (properties == null) {
+	        System.out.println("Properties file not loaded!");
+	        return null;
+	    }
+	    return properties.getProperty(key);
+	}
+	
 	public static void readFromPropFile(String filepath) throws IOException {
 
 		FileReader file = new FileReader(filepath);
@@ -87,33 +111,26 @@ public class Utility {
 
 	public static String screenshot(String name) throws IOException {
 
-		String path = "C:\\Users\\madhu\\eclipse-workspace\\Capstone-Project\\screenshots" + name+ ".png";
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String path = "C:\\Users\\madhu\\eclipse-workspace\\Capstone-Project\\screenshots" + name+ ".png";
 		File dest = new File(path);
 		FileUtils.copyFile(src, dest);
 		return path;
 	}
-	
 	    // Explicit wait
 	    public static void waitForVisibility(WebDriver driver, WebElement element) {
 	        new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT)).until(ExpectedConditions.visibilityOf(element));
 	    }
 
-	@AfterMethod
-	//Capture the screenshot if the test fails
-	public void screenshot(ITestResult result) {
-	    if (ITestResult.FAILURE == result.getStatus()) {
-	        try {
-	        	String path="C:\\Users\\madhu\\eclipse-workspace\\Capstone-Project\\screenshots";
-	            File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	            String screenshotName = "screenshots/" + result.getName() + ".png";
-	            FileUtils.copyFile(srcFile, new File(screenshotName));
-	            System.out.println("Screenshot taken for failed test: " + result.getName());
-	        } catch (Exception e) {
-	            System.out.println("Exception while taking screenshot: " + e.getMessage());
-	        }
-	    }
-	}
-	
-	
+	    public void waitForSeconds(int seconds) {
+		    try {
+		        Thread.sleep(seconds * 1000);
+		    } catch (InterruptedException e) {
+		        Thread.currentThread().interrupt();
+		    }
+		}
+	    public void browserclose() {
+			
+			driver.close();
+		}
 }

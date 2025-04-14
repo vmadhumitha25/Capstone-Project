@@ -90,33 +90,30 @@ public class BookHotelPage {
 	@FindBy(id = "order_no")
 	WebElement orderNoField;
 
+	@FindBy(id = "reset")
+	WebElement resetBtn;
+
 	public void fillBookingDetails(String fname, String lname, String addr, String cc, String type, String month,
 			String year, String cvvNum) {
-		try {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.scrollBy(0, 500);"); // Scroll down by 500px
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-			wait.until(ExpectedConditions.visibilityOf(firstName));
-			wait.until(ExpectedConditions.elementToBeClickable(firstName));
-			firstName.clear();
-			firstName.sendKeys(fname);
-			System.out.println("First Name filled with: " + fname);
-		} catch (Exception e) {
-			System.out.println("ERROR filling first name: " + e.getMessage());
-		}
+
+		System.out.println("Filling form with: " + fname + ", " + lname + ", " + addr);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, 500);"); // Scroll down by 500px
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		firstName.sendKeys(fname);
 		lastName.sendKeys(lname);
 		address.sendKeys(addr);
 		creditCardNumber.sendKeys(cc);
 
-		new Select(creditCardType).selectByVisibleText(type);
-		new Select(expMonth).selectByVisibleText(month);
-		new Select(expYear).selectByVisibleText(year);
+		Select cardType = new Select(creditCardType);
+		cardType.selectByVisibleText(type);
 
-		creditCardType.sendKeys(type);
-		expMonth.sendKeys(month);
-		expYear.sendKeys(year);
+		Select expMonthSelect = new Select(expMonth);
+		expMonthSelect.selectByVisibleText(month);
+
+		Select expYearSelect = new Select(expYear);
+		expYearSelect.selectByVisibleText(year);
 		cvv.sendKeys(cvvNum);
-		bookNowButton.click();
 	}
 
 	public void clickBookNow() {
@@ -127,22 +124,44 @@ public class BookHotelPage {
 		return errorMsg.getText();
 	}
 
-	public String getHotelName() {
-		return hotelNameDisplay.getAttribute("value");
-	}
+	// Method to get the hotel name on the booking confirmation page
+    public String getHotelName() {
+        WebElement hotelNameElement = driver.findElement(By.cssSelector(".hotel-name"));
+        return hotelNameElement.getText();
+    }
 
-	public String getRoomType() {
-		return roomTypeDisplay.getAttribute("value");
-	}
+    // Method to get the room type on the booking confirmation page
+    public String getRoomType() {
+        WebElement roomTypeElement = driver.findElement(By.cssSelector(".room-type"));
+        return roomTypeElement.getText();
+    }
 
-	public String getTotalPrice() {
-		return totalPriceDisplay.getAttribute("value");
-	}
+    // Method to get the hotel location on the booking confirmation page
+    public String getHotelLocation() {
+        WebElement locationElement = driver.findElement(By.cssSelector(".hotel-location"));
+        return locationElement.getText();
+    }
 
+    // Method to get the total price on the booking confirmation page
+    public String getTotalPrice() {
+        WebElement priceElement = driver.findElement(By.cssSelector(".total-price"));
+        return priceElement.getText();
+    }
 	public String getOrderNumber() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement orderNumber = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("order_no")));
 		return orderNumber.getAttribute("value");
 	}
 
+	public void clickReset() {
+		resetBtn.click();
+	}
+
+	public void clickCancel() {
+		cancelBtn.click();
+	}
+
+	public String getBookingID() {
+		return orderNoField.getAttribute("value");
+	}
 }

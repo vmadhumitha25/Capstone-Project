@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 16 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,96 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,  7 skipped,  </span>
+                    <span class="method-stats">35 methods, 16 failed,  3 skipped,  16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ItineraryTest" class="method navigator-link" hash-for-method="accessMyItinerary">accessMyItinerary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="bookHotelTests(  , Magesh, 123 Street, 542, VISA, March, 2026, 123)">bookHotelTests(  , Magesh, 123 Street, 542, VISA, March, 2026, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="bookHotelTests(Mimi,  , 123 Street, 4111111111111111, VISA, March, 2023, 123)">bookHotelTests(Mimi,  , 123 Street, 4111111111111111, VISA, March, 2023, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="bookHotelTests(Divya, Magesh, 123 Street, 4111111111111111, VISA, Test, 2026, 123)">bookHotelTests(Divya, Magesh, 123 Street, 4111111111111111, VISA, Test, 2026, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="bookHotelTests(Mokthi, Doe, 123 Street, 4111111111111111, VISA, March, 2026, 123)">bookHotelTests(Mokthi, Doe, 123 Street, 4111111111111111, VISA, March, 2026, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="bookHotelTests(@#$%^&amp;, Princy, 123 Street, 4111111111111111, VISA, March, 2026, xxx)">bookHotelTests(@#$%^&, Princy, 123 Street, 4111111111111111, VISA, March, 2026, xxx)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="searchHotelTests(TC006, Sydney, Hotel Creek, Standard, 1, , 4/22/25, 2, 0, valid)">searchHotelTests(TC006, Sydney, Hotel Creek, Standard, 1, , 4/22/25, 2, 0, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="searchHotelTests(TC005, New York, , Double, 3, 5/15/25, , 2, 2, valid)">searchHotelTests(TC005, New York, , Double, 3, 5/15/25, , 2, 2, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="searchHotelTests(TC001, Sydney, Hotel Creek, Standard, 1, 4/20/25, 4/22/25, 2, 0, valid)">searchHotelTests(TC001, Sydney, Hotel Creek, Standard, 1, 4/20/25, 4/22/25, 2, 0, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(MadhuMitha, Janarun, Invalid)">tesLoginFunction(MadhuMitha, Janarun, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(, Mitha@123, Invalid)">tesLoginFunction(, Mitha@123, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(MadhuV, , Invalid)">tesLoginFunction(MadhuV, , Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(, , )">tesLoginFunction(, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="testLogoutWithInvalidSession">testLogoutWithInvalidSession</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterUserTest" class="method navigator-link" hash-for-method="testValidRegistration">testValidRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="validLogout">validLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -103,40 +192,109 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(Madhu2510, mitha@123, invalid(Wrong Pass))">tesLoginFunction(Madhu2510, mitha@123, invalid(Wrong Pass))</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.ItineraryTest" class="method navigator-link" hash-for-method="cancelAlreadyCanceledBooking">cancelAlreadyCanceledBooking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(madhu@#$, pass@#$, invalid)">tesLoginFunction(madhu@#$, pass@#$, invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.ItineraryTest" class="method navigator-link" hash-for-method="cancelBooking">cancelBooking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(, , )">tesLoginFunction(, , )</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(, Madhu@123, invalid)">tesLoginFunction(, Madhu@123, invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(Mitha25, , invalid)">tesLoginFunction(Mitha25, , invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(, , )">tesLoginFunction(, , )</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(JananiShreeS, janarun, valid)">tesLoginFunction(JananiShreeS, janarun, valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.ItineraryTest" class="method navigator-link" hash-for-method="searchOrderId">searchOrderId</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ItineraryTest" class="method navigator-link" hash-for-method="confirmBookingAndFetchOrderId">confirmBookingAndFetchOrderId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="logoutBtnVisible">logoutBtnVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="refreshAfterLogout">refreshAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="searchHotelTests(TC004, Melbourne, Hotel Sunshine, Deluxe, 2, 4/30/25, 4/28/25, 1, 1, valid date)">searchHotelTests(TC004, Melbourne, Hotel Sunshine, Deluxe, 2, 4/30/25, 4/28/25, 1, 1, valid date)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="searchHotelTests(TC002, , Hotel Sunshine, Deluxe, 2, 4/25/25, 4/28/25, 1, 1, Invaid)">searchHotelTests(TC002, , Hotel Sunshine, Deluxe, 2, 4/25/25, 4/28/25, 1, 1, Invaid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchHotelTest" class="method navigator-link" hash-for-method="searchHotelTests(TC003, New York, Hotel Hervey, Double, 0, 5/15/25, 5/17/25, 2, 2, In valid 0 roooms)">searchHotelTests(TC003, New York, Hotel Hervey, Double, 0, 5/15/25, 5/17/25, 2, 2, In valid 0 roooms)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesLoginFunction(JananiShreeS, janarun, Success)">tesLoginFunction(JananiShreeS, janarun, Success)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.BookHotelTest" class="method navigator-link" hash-for-method="testCancelButtonFunctionality">testCancelButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SelectHotelTest" class="method navigator-link" hash-for-method="testContinueWithoutSelection">testContinueWithoutSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="testDirectLogoutWithoutLogin">testDirectLogoutWithoutLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterUserTest" class="method navigator-link" hash-for-method="testEmptyFieldsRegistration">testEmptyFieldsRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterUserTest" class="method navigator-link" hash-for-method="testInvalidEmailRegistration">testInvalidEmailRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="testLogoutInMultipleTabs">testLogoutInMultipleTabs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterUserTest" class="method navigator-link" hash-for-method="testMismatchedPasswordRegistration">testMismatchedPasswordRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SelectHotelTest" class="method navigator-link" hash-for-method="testSelectHotelAndContinue">testSelectHotelAndContinue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.RegisterUserTest" class="method navigator-link" hash-for-method="testTermsNotAcceptedRegistration">testTermsNotAcceptedRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -148,43 +306,291 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">tests.ItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accessMyItinerary">
+                  </a> <!-- accessMyItinerary -->
+                  <span class="method-name">accessMyItinerary</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5d047aa1f18a29282066d13a39025a91, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58771/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d047aa1f18a29282066d13a39025a91
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at tests.ItineraryTest.accessMyItinerary(ItineraryTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:439)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 33 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:348)
+	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:675)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:984)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:939)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:939)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogoutWithInvalidSession">
+                  </a> <!-- testLogoutWithInvalidSession -->
+                  <span class="method-name">testLogoutWithInvalidSession</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3bc70a5cbef34e1584d739c660253f4d, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58976}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58976/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bc70a5cbef34e1584d739c660253f4d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at pages.LoginPage.logoutButton(LoginPage.java:78)
+	at pages.LoginPage.loginFunction(LoginPage.java:96)
+	at tests.LogoutTest.testLogoutWithInvalidSession(LogoutTest.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogout">
+                  </a> <!-- validLogout -->
+                  <span class="method-name">validLogout</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.LogoutPage.loginPageDisplayed()&quot; because &quot;this.logoutPage&quot; is null
+	at tests.LogoutTest.validLogout(LogoutTest.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SearchHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHotelTests(TC006, Sydney, Hotel Creek, Standard, 1, , 4/22/25, 2, 0, valid)">
+                  </a> <!-- searchHotelTests(TC006, Sydney, Hotel Creek, Standard, 1, , 4/22/25, 2, 0, valid) -->
+                  <span class="method-name">searchHotelTests</span>
+                  <span class="parameters">(TC006,Sydney,Hotel Creek,Standard,1,,4/22/25,2,0,valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Valid case failed. expected [true] but found [false]
+	at tests.SearchHotelTest.searchHotelTests(SearchHotelTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHotelTests(TC005, New York, , Double, 3, 5/15/25, , 2, 2, valid)">
+                  </a> <!-- searchHotelTests(TC005, New York, , Double, 3, 5/15/25, , 2, 2, valid) -->
+                  <span class="method-name">searchHotelTests</span>
+                  <span class="parameters">(TC005,New York,,Double,3,5/15/25,,2,2,valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Valid case failed. expected [true] but found [false]
+	at tests.SearchHotelTest.searchHotelTests(SearchHotelTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHotelTests(TC001, Sydney, Hotel Creek, Standard, 1, 4/20/25, 4/22/25, 2, 0, valid)">
+                  </a> <!-- searchHotelTests(TC001, Sydney, Hotel Creek, Standard, 1, 4/20/25, 4/22/25, 2, 0, valid) -->
+                  <span class="method-name">searchHotelTests</span>
+                  <span class="parameters">(TC001,Sydney,Hotel Creek,Standard,1,4/20/25,4/22/25,2,0,valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Valid case failed. expected [true] but found [false]
+	at tests.SearchHotelTest.searchHotelTests(SearchHotelTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tesLoginFunction(Madhu2510, mitha@123, invalid(Wrong Pass))">
-                  </a> <!-- tesLoginFunction(Madhu2510, mitha@123, invalid(Wrong Pass)) -->
+                  <a name="tesLoginFunction(MadhuMitha, Janarun, Invalid)">
+                  </a> <!-- tesLoginFunction(MadhuMitha, Janarun, Invalid) -->
                   <span class="method-name">tesLoginFunction</span>
-                  <span class="parameters">(Madhu2510,mitha@123,invalid(Wrong Pass))</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replaceAll(String, String)&quot; because &quot;x&quot; is null
-	at com.aventstack.extentreports.ExtentTest.lambda$assignCategory$0(ExtentTest.java:1047)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at com.aventstack.extentreports.ExtentTest.assignCategory(ExtentTest.java:1046)
-	at base.ProjectSpecification.testDetails(ProjectSpecification.java:64)
+                  <span class="parameters">(MadhuMitha,Janarun,Invalid)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c34c6da6fff9eddf99d1a623589045ef, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58120}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58120/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c34c6da6fff9eddf99d1a623589045ef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at pages.LoginPage.logoutButton(LoginPage.java:78)
+	at pages.LoginPage.loginFunction(LoginPage.java:96)
+	at tests.LoginTest.tesLoginFunction(LoginTest.java:40)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tesLoginFunction(madhu@#$, pass@#$, invalid)">
-                  </a> <!-- tesLoginFunction(madhu@#$, pass@#$, invalid) -->
+                  <a name="tesLoginFunction(, Mitha@123, Invalid)">
+                  </a> <!-- tesLoginFunction(, Mitha@123, Invalid) -->
                   <span class="method-name">tesLoginFunction</span>
-                  <span class="parameters">(madhu@#$,pass@#$,invalid)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replaceAll(String, String)&quot; because &quot;x&quot; is null
-	at com.aventstack.extentreports.ExtentTest.lambda$assignCategory$0(ExtentTest.java:1047)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at com.aventstack.extentreports.ExtentTest.assignCategory(ExtentTest.java:1046)
-	at base.ProjectSpecification.testDetails(ProjectSpecification.java:64)
+                  <span class="parameters">(,Mitha@123,Invalid)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [797eeaae78e1cb8efebc917d0e05083d, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58160/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 797eeaae78e1cb8efebc917d0e05083d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at pages.LoginPage.logoutButton(LoginPage.java:78)
+	at pages.LoginPage.loginFunction(LoginPage.java:96)
+	at tests.LoginTest.tesLoginFunction(LoginTest.java:40)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tesLoginFunction(MadhuV, , Invalid)">
+                  </a> <!-- tesLoginFunction(MadhuV, , Invalid) -->
+                  <span class="method-name">tesLoginFunction</span>
+                  <span class="parameters">(MadhuV,,Invalid)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5dfec58e566a985746010d1fb8949ede, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58197/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dfec58e566a985746010d1fb8949ede
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at pages.LoginPage.logoutButton(LoginPage.java:78)
+	at pages.LoginPage.loginFunction(LoginPage.java:96)
+	at tests.LoginTest.tesLoginFunction(LoginTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -194,87 +600,377 @@
                   </a> <!-- tesLoginFunction(, , ) -->
                   <span class="method-name">tesLoginFunction</span>
                   <span class="parameters">(,,)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replaceAll(String, String)&quot; because &quot;x&quot; is null
-	at com.aventstack.extentreports.ExtentTest.lambda$assignCategory$0(ExtentTest.java:1047)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at com.aventstack.extentreports.ExtentTest.assignCategory(ExtentTest.java:1046)
-	at base.ProjectSpecification.testDetails(ProjectSpecification.java:64)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5dde95fe848a18e6431544a88136a92, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58079/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5dde95fe848a18e6431544a88136a92
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at pages.LoginPage.logoutButton(LoginPage.java:78)
+	at pages.LoginPage.loginFunction(LoginPage.java:96)
+	at tests.LoginTest.tesLoginFunction(LoginTest.java:40)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegisterUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidRegistration">
+                  </a> <!-- testValidRegistration -->
+                  <span class="method-name">testValidRegistration</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.reg_success&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25424eb4e70d9276db7677b89fc738ec, findElement {using=css selector, value=.reg_success}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57864/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25424eb4e70d9276db7677b89fc738ec
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at pages.RegisterPage.verifySuccessfulRegistration(RegisterPage.java:153)
+	at tests.RegisterUserTest.testValidRegistration(RegisterUserTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.BookHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bookHotelTests(  , Magesh, 123 Street, 542, VISA, March, 2026, 123)">
+                  </a> <!-- bookHotelTests(  , Magesh, 123 Street, 542, VISA, March, 2026, 123) -->
+                  <span class="method-name">bookHotelTests</span>
+                  <span class="parameters">(  ,Magesh,123 Street,542,VISA,March,2026,123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected error for missing fields expected [true] but found [false]
+	at tests.BookHotelTest.bookHotelTests(BookHotelTest.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tesLoginFunction(, Madhu@123, invalid)">
-                  </a> <!-- tesLoginFunction(, Madhu@123, invalid) -->
-                  <span class="method-name">tesLoginFunction</span>
-                  <span class="parameters">(,Madhu@123,invalid)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replaceAll(String, String)&quot; because &quot;x&quot; is null
-	at com.aventstack.extentreports.ExtentTest.lambda$assignCategory$0(ExtentTest.java:1047)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at com.aventstack.extentreports.ExtentTest.assignCategory(ExtentTest.java:1046)
-	at base.ProjectSpecification.testDetails(ProjectSpecification.java:64)
+                  <a name="bookHotelTests(Mimi,  , 123 Street, 4111111111111111, VISA, March, 2023, 123)">
+                  </a> <!-- bookHotelTests(Mimi,  , 123 Street, 4111111111111111, VISA, March, 2023, 123) -->
+                  <span class="method-name">bookHotelTests</span>
+                  <span class="parameters">(Mimi, ,123 Street,4111111111111111,VISA,March,2023,123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected error for missing fields expected [true] but found [false]
+	at tests.BookHotelTest.bookHotelTests(BookHotelTest.java:97)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tesLoginFunction(Mitha25, , invalid)">
-                  </a> <!-- tesLoginFunction(Mitha25, , invalid) -->
-                  <span class="method-name">tesLoginFunction</span>
-                  <span class="parameters">(Mitha25,,invalid)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replaceAll(String, String)&quot; because &quot;x&quot; is null
-	at com.aventstack.extentreports.ExtentTest.lambda$assignCategory$0(ExtentTest.java:1047)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at com.aventstack.extentreports.ExtentTest.assignCategory(ExtentTest.java:1046)
-	at base.ProjectSpecification.testDetails(ProjectSpecification.java:64)
+                  <a name="bookHotelTests(Divya, Magesh, 123 Street, 4111111111111111, VISA, Test, 2026, 123)">
+                  </a> <!-- bookHotelTests(Divya, Magesh, 123 Street, 4111111111111111, VISA, Test, 2026, 123) -->
+                  <span class="method-name">bookHotelTests</span>
+                  <span class="parameters">(Divya,Magesh,123 Street,4111111111111111,VISA,Test,2026,123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Test
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pages.BookHotelPage.fillBookingDetails(BookHotelPage.java:112)
+	at tests.BookHotelTest.bookHotelTests(BookHotelTest.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tesLoginFunction(, , )">
-                  </a> <!-- tesLoginFunction(, , ) -->
-                  <span class="method-name">tesLoginFunction</span>
-                  <span class="parameters">(,,)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replaceAll(String, String)&quot; because &quot;x&quot; is null
-	at com.aventstack.extentreports.ExtentTest.lambda$assignCategory$0(ExtentTest.java:1047)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at com.aventstack.extentreports.ExtentTest.assignCategory(ExtentTest.java:1046)
-	at base.ProjectSpecification.testDetails(ProjectSpecification.java:64)
+                  <a name="bookHotelTests(Mokthi, Doe, 123 Street, 4111111111111111, VISA, March, 2026, 123)">
+                  </a> <!-- bookHotelTests(Mokthi, Doe, 123 Street, 4111111111111111, VISA, March, 2026, 123) -->
+                  <span class="method-name">bookHotelTests</span>
+                  <span class="parameters">(Mokthi,Doe,123 Street,4111111111111111,VISA,March,2026,123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected error for missing fields expected [true] but found [false]
+	at tests.BookHotelTest.bookHotelTests(BookHotelTest.java:97)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tesLoginFunction(JananiShreeS, janarun, valid)">
-                  </a> <!-- tesLoginFunction(JananiShreeS, janarun, valid) -->
-                  <span class="method-name">tesLoginFunction</span>
-                  <span class="parameters">(JananiShreeS,janarun,valid)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.replaceAll(String, String)&quot; because &quot;x&quot; is null
-	at com.aventstack.extentreports.ExtentTest.lambda$assignCategory$0(ExtentTest.java:1047)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at com.aventstack.extentreports.ExtentTest.assignCategory(ExtentTest.java:1046)
-	at base.ProjectSpecification.testDetails(ProjectSpecification.java:64)
+                  <a name="bookHotelTests(@#$%^&amp;, Princy, 123 Street, 4111111111111111, VISA, March, 2026, xxx)">
+                  </a> <!-- bookHotelTests(@#$%^&, Princy, 123 Street, 4111111111111111, VISA, March, 2026, xxx) -->
+                  <span class="method-name">bookHotelTests</span>
+                  <span class="parameters">(@#$%^&,Princy,123 Street,4111111111111111,VISA,March,2026,xxx)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected error for missing fields expected [true] but found [false]
+	at tests.BookHotelTest.bookHotelTests(BookHotelTest.java:97)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.ItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cancelAlreadyCanceledBooking">
+                  </a> <!-- cancelAlreadyCanceledBooking -->
+                  <span class="method-name">cancelAlreadyCanceledBooking</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.ItineraryTest.cancelAlreadyCanceledBooking() on instance tests.ItineraryTest@3ad83a66 depends on not successfully finished methods 
+[tests.ItineraryTest.cancelBooking() on instance tests.ItineraryTest@3ad83a66]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cancelBooking">
+                  </a> <!-- cancelBooking -->
+                  <span class="method-name">cancelBooking</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.ItineraryTest.cancelBooking() on instance tests.ItineraryTest@3ad83a66 depends on not successfully finished methods 
+[tests.ItineraryTest.searchOrderId() on instance tests.ItineraryTest@3ad83a66]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderId">
+                  </a> <!-- searchOrderId -->
+                  <span class="method-name">searchOrderId</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.ItineraryTest.searchOrderId() on instance tests.ItineraryTest@3ad83a66 depends on not successfully finished methods 
+[tests.ItineraryTest.accessMyItinerary() on instance tests.ItineraryTest@3ad83a66]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SelectHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContinueWithoutSelection">
+                  </a> <!-- testContinueWithoutSelection -->
+                  <span class="method-name">testContinueWithoutSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectHotelAndContinue">
+                  </a> <!-- testSelectHotelAndContinue -->
+                  <span class="method-name">testSelectHotelAndContinue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmBookingAndFetchOrderId">
+                  </a> <!-- confirmBookingAndFetchOrderId -->
+                  <span class="method-name">confirmBookingAndFetchOrderId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutBtnVisible">
+                  </a> <!-- logoutBtnVisible -->
+                  <span class="method-name">logoutBtnVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refreshAfterLogout">
+                  </a> <!-- refreshAfterLogout -->
+                  <span class="method-name">refreshAfterLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDirectLogoutWithoutLogin">
+                  </a> <!-- testDirectLogoutWithoutLogin -->
+                  <span class="method-name">testDirectLogoutWithoutLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogoutInMultipleTabs">
+                  </a> <!-- testLogoutInMultipleTabs -->
+                  <span class="method-name">testLogoutInMultipleTabs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tesLoginFunction(JananiShreeS, janarun, Success)">
+                  </a> <!-- tesLoginFunction(JananiShreeS, janarun, Success) -->
+                  <span class="method-name">tesLoginFunction</span>
+                  <span class="parameters">(JananiShreeS,janarun,Success)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SearchHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHotelTests(TC004, Melbourne, Hotel Sunshine, Deluxe, 2, 4/30/25, 4/28/25, 1, 1, valid date)">
+                  </a> <!-- searchHotelTests(TC004, Melbourne, Hotel Sunshine, Deluxe, 2, 4/30/25, 4/28/25, 1, 1, valid date) -->
+                  <span class="method-name">searchHotelTests</span>
+                  <span class="parameters">(TC004,Melbourne,Hotel Sunshine,Deluxe,2,4/30/25,4/28/25,1,1,valid date)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHotelTests(TC002, , Hotel Sunshine, Deluxe, 2, 4/25/25, 4/28/25, 1, 1, Invaid)">
+                  </a> <!-- searchHotelTests(TC002, , Hotel Sunshine, Deluxe, 2, 4/25/25, 4/28/25, 1, 1, Invaid) -->
+                  <span class="method-name">searchHotelTests</span>
+                  <span class="parameters">(TC002,,Hotel Sunshine,Deluxe,2,4/25/25,4/28/25,1,1,Invaid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHotelTests(TC003, New York, Hotel Hervey, Double, 0, 5/15/25, 5/17/25, 2, 2, In valid 0 roooms)">
+                  </a> <!-- searchHotelTests(TC003, New York, Hotel Hervey, Double, 0, 5/15/25, 5/17/25, 2, 2, In valid 0 roooms) -->
+                  <span class="method-name">searchHotelTests</span>
+                  <span class="parameters">(TC003,New York,Hotel Hervey,Double,0,5/15/25,5/17/25,2,2,In valid 0 roooms)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RegisterUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyFieldsRegistration">
+                  </a> <!-- testEmptyFieldsRegistration -->
+                  <span class="method-name">testEmptyFieldsRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidEmailRegistration">
+                  </a> <!-- testInvalidEmailRegistration -->
+                  <span class="method-name">testInvalidEmailRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMismatchedPasswordRegistration">
+                  </a> <!-- testMismatchedPasswordRegistration -->
+                  <span class="method-name">testMismatchedPasswordRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTermsNotAcceptedRegistration">
+                  </a> <!-- testTermsNotAcceptedRegistration -->
+                  <span class="method-name">testTermsNotAcceptedRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.BookHotelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCancelButtonFunctionality">
+                  </a> <!-- testCancelButtonFunctionality -->
+                  <span class="method-name">testCancelButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -285,10 +981,19 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://adactinhotelapp.com/index.php&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilis.Listener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;tests.RegisterUserTest&quot;/&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.SearchHotelTest&quot;/&gt;
+      &lt;class name=&quot;tests.SelectHotelTest&quot;/&gt;
+      &lt;class name=&quot;tests.BookHotelTest&quot;/&gt;
+      &lt;class name=&quot;tests.ItineraryTest&quot;/&gt;
+      &lt;class name=&quot;tests.LogoutTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -302,7 +1007,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,40 +1033,152 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(35);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tesLoginFunction')
-data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 1);
+data.setCell(0, 1, 'testValidRegistration')
+data.setCell(0, 2, 'tests.RegisterUserTest')
+data.setCell(0, 3, 25406);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tesLoginFunction')
-data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'bookHotelTests')
+data.setCell(1, 2, 'tests.BookHotelTest')
+data.setCell(1, 3, 19379);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tesLoginFunction')
-data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'bookHotelTests')
+data.setCell(2, 2, 'tests.BookHotelTest')
+data.setCell(2, 3, 15429);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tesLoginFunction')
-data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'bookHotelTests')
+data.setCell(3, 2, 'tests.BookHotelTest')
+data.setCell(3, 3, 15307);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tesLoginFunction')
-data.setCell(4, 2, 'tests.LoginTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'bookHotelTests')
+data.setCell(4, 2, 'tests.BookHotelTest')
+data.setCell(4, 3, 15277);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tesLoginFunction')
-data.setCell(5, 2, 'tests.LoginTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'bookHotelTests')
+data.setCell(5, 2, 'tests.BookHotelTest')
+data.setCell(5, 3, 13250);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'tesLoginFunction')
 data.setCell(6, 2, 'tests.LoginTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 3, 13024);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLogoutWithInvalidSession')
+data.setCell(7, 2, 'tests.LogoutTest')
+data.setCell(7, 3, 11847);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'confirmBookingAndFetchOrderId')
+data.setCell(8, 2, 'tests.ItineraryTest')
+data.setCell(8, 3, 11787);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tesLoginFunction')
+data.setCell(9, 2, 'tests.LoginTest')
+data.setCell(9, 3, 11470);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tesLoginFunction')
+data.setCell(10, 2, 'tests.LoginTest')
+data.setCell(10, 3, 11359);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'tesLoginFunction')
+data.setCell(11, 2, 'tests.LoginTest')
+data.setCell(11, 3, 11354);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validLogout')
+data.setCell(12, 2, 'tests.LogoutTest')
+data.setCell(12, 3, 11153);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCancelButtonFunctionality')
+data.setCell(13, 2, 'tests.BookHotelTest')
+data.setCell(13, 3, 10224);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'accessMyItinerary')
+data.setCell(14, 2, 'tests.ItineraryTest')
+data.setCell(14, 3, 8590);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLogoutInMultipleTabs')
+data.setCell(15, 2, 'tests.LogoutTest')
+data.setCell(15, 3, 7653);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'tesLoginFunction')
+data.setCell(16, 2, 'tests.LoginTest')
+data.setCell(16, 3, 7640);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'logoutBtnVisible')
+data.setCell(17, 2, 'tests.LogoutTest')
+data.setCell(17, 3, 5980);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'searchHotelTests')
+data.setCell(18, 2, 'tests.SearchHotelTest')
+data.setCell(18, 3, 5371);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'searchHotelTests')
+data.setCell(19, 2, 'tests.SearchHotelTest')
+data.setCell(19, 3, 5147);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'searchHotelTests')
+data.setCell(20, 2, 'tests.SearchHotelTest')
+data.setCell(20, 3, 4322);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'searchHotelTests')
+data.setCell(21, 2, 'tests.SearchHotelTest')
+data.setCell(21, 3, 3760);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testTermsNotAcceptedRegistration')
+data.setCell(22, 2, 'tests.RegisterUserTest')
+data.setCell(22, 3, 3737);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'searchHotelTests')
+data.setCell(23, 2, 'tests.SearchHotelTest')
+data.setCell(23, 3, 3647);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'searchHotelTests')
+data.setCell(24, 2, 'tests.SearchHotelTest')
+data.setCell(24, 3, 3601);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testSelectHotelAndContinue')
+data.setCell(25, 2, 'tests.SelectHotelTest')
+data.setCell(25, 3, 3291);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testEmptyFieldsRegistration')
+data.setCell(26, 2, 'tests.RegisterUserTest')
+data.setCell(26, 3, 3087);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testContinueWithoutSelection')
+data.setCell(27, 2, 'tests.SelectHotelTest')
+data.setCell(27, 3, 2832);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testInvalidEmailRegistration')
+data.setCell(28, 2, 'tests.RegisterUserTest')
+data.setCell(28, 3, 2769);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testMismatchedPasswordRegistration')
+data.setCell(29, 2, 'tests.RegisterUserTest')
+data.setCell(29, 3, 2465);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'refreshAfterLogout')
+data.setCell(30, 2, 'tests.LogoutTest')
+data.setCell(30, 3, 1887);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testDirectLogoutWithoutLogin')
+data.setCell(31, 2, 'tests.LogoutTest')
+data.setCell(31, 3, 566);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'searchOrderId')
+data.setCell(32, 2, 'tests.ItineraryTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'cancelAlreadyCanceledBooking')
+data.setCell(33, 2, 'tests.ItineraryTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'cancelBooking')
+data.setCell(34, 2, 'tests.ItineraryTest')
+data.setCell(34, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 ms</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -376,9 +1193,63 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SelectHotelTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LogoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SearchHotelTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.BookHotelTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -387,24 +1258,431 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.RegisterUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BookHotelTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">401 ms</span>
+                <span class="method-start">371 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">371 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">373 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RegisterUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">373 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">373 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">374 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SelectHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">375 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RegisterUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">404 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">testValidRegistration</span>
+                <span class="method-start">7108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">32537 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFieldsRegistration</span>
+                <span class="method-start">39545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">42635 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidEmailRegistration</span>
+                <span class="method-start">47593 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">50364 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMismatchedPasswordRegistration</span>
+                <span class="method-start">55747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">58214 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTermsNotAcceptedRegistration</span>
+                <span class="method-start">67069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">70809 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">417 ms</span>
+                <span class="method-start">71109 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">73075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tesLoginFunction(JananiShreeS, janarun, Success)</span>
+                <span class="method-start">80562 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">88204 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tesLoginFunction(, , )</span>
+                <span class="method-start">94349 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">105706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tesLoginFunction(MadhuMitha, Janarun, Invalid)</span>
+                <span class="method-start">112316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">125344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tesLoginFunction(, Mitha@123, Invalid)</span>
+                <span class="method-start">130286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">141648 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tesLoginFunction(MadhuV, , Invalid)</span>
+                <span class="method-start">148908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">160381 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">161467 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">161709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchHotelTests(TC001, Sydney, Hotel Creek, Standard, 1, 4/20/25, 4/22/25, 2, 0, valid)</span>
+                <span class="method-start">167526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">171290 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchHotelTests(TC002, , Hotel Sunshine, Deluxe, 2, 4/25/25, 4/28/25, 1, 1, Invaid)</span>
+                <span class="method-start">178318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">183467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchHotelTests(TC003, New York, Hotel Hervey, Double, 0, 5/15/25, 5/17/25, 2, 2, In valid 0 roooms)</span>
+                <span class="method-start">188236 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">193609 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchHotelTests(TC004, Melbourne, Hotel Sunshine, Deluxe, 2, 4/30/25, 4/28/25, 1, 1, valid date)</span>
+                <span class="method-start">198257 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">202582 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchHotelTests(TC005, New York, , Double, 3, 5/15/25, , 2, 2, valid)</span>
+                <span class="method-start">207924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">211528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchHotelTests(TC006, Sydney, Hotel Creek, Standard, 1, , 4/22/25, 2, 0, valid)</span>
+                <span class="method-start">216615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">220264 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SelectHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">220586 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">220588 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSelectHotelAndContinue</span>
+                <span class="method-start">225321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">228615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testContinueWithoutSelection</span>
+                <span class="method-start">233404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">236237 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BookHotelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">236473 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">236475 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bookHotelTests(Mokthi, Doe, 123 Street, 4111111111111111, VISA, March, 2026, 123)</span>
+                <span class="method-start">245639 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">258892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bookHotelTests(  , Magesh, 123 Street, 542, VISA, March, 2026, 123)</span>
+                <span class="method-start">264448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">279879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bookHotelTests(Divya, Magesh, 123 Street, 4111111111111111, VISA, Test, 2026, 123)</span>
+                <span class="method-start">285814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">305197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bookHotelTests(Mimi,  , 123 Street, 4111111111111111, VISA, March, 2023, 123)</span>
+                <span class="method-start">310174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">325453 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bookHotelTests(@#$%^&, Princy, 123 Street, 4111111111111111, VISA, March, 2026, xxx)</span>
+                <span class="method-start">332320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">347629 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCancelButtonFunctionality</span>
+                <span class="method-start">352919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">363144 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">363942 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">363943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">confirmBookingAndFetchOrderId</span>
+                <span class="method-start">370855 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">382646 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">accessMyItinerary</span>
+                <span class="method-start">387695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">396307 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">396318 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">396320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutBtnVisible</span>
+                <span class="method-start">401439 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">407422 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validLogout</span>
+                <span class="method-start">416726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">427883 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDirectLogoutWithoutLogin</span>
+                <span class="method-start">434735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">435303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">refreshAfterLogout</span>
+                <span class="method-start">441845 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">443733 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogoutInMultipleTabs</span>
+                <span class="method-start">448540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchingBrowserandLoadingURL</span>
+                <span class="method-start">456195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogoutWithInvalidSession</span>
+                <span class="method-start">460785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">472634 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RegisterUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">reportClose</span>
-                <span class="method-start">2058 ms</span>
+                <span class="method-start">473447 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

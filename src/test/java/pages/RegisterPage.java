@@ -72,6 +72,9 @@ public class RegisterPage extends ProjectSpecification{
     @FindBy(id = "Go back to Login page")
     WebElement goBackLogin;
     
+    @FindBy(xpath = "//span[@class='reg_error']")
+    WebElement errorMessage;
+    
     public void clickRegisterLink() {
         registerLink.click();
     }
@@ -127,7 +130,7 @@ public class RegisterPage extends ProjectSpecification{
         fullName.sendKeys(name);
         email.sendKeys(mail);
         termsCheckbox.click();
-        registerButton.click();
+       // registerButton.click();
     }
 	
     public void clickResetButton() {
@@ -144,10 +147,10 @@ public class RegisterPage extends ProjectSpecification{
         Assert.assertFalse(termsCheckbox.isSelected(), "Terms checkbox should not be selected.");
     }
     
-    public void verifySuccessfulRegistration() {
+    public String verifySuccessfulRegistration() {
         String currentUrl = driver.getCurrentUrl();
-        Assert.assertTrue(currentUrl.contains("login"), "Expected to redirect to login page after registration.");
-        Assert.assertTrue(verifyRegister.isDisplayed(), "Registration success link not found.");
+        System.out.println(currentUrl);
+        return registerSuccess.getText();
     }
 
     public void verifyRegistrationFailure() {
@@ -155,23 +158,7 @@ public class RegisterPage extends ProjectSpecification{
         Assert.assertTrue(error.isDisplayed(), "Expected error message for failed registration.");
     }
 	
-    public void verifyInvalidRegistration(String tcId) {
-        switch (tcId) {
-            case "TC002":
-                Assert.assertTrue(usernameError.isDisplayed(), "Username error not displayed.");
-                break;
-            case "TC003":
-                Assert.assertTrue(passwordError.isDisplayed(), "Password mismatch error not displayed.");
-                break;
-            case "TC004":
-                Assert.assertTrue(emailErrorMsg.isDisplayed(), "Email error not displayed.");
-                break;
-            case "TC005":
-                Assert.assertTrue(captchaError.isDisplayed(), "Captcha error not displayed.");
-                break;
-            case "TC006":
-                Assert.assertTrue(registerButton.isDisplayed(), "Expected to stay on the same page due to T&C issue.");
-                break;
-        }
+    public String getErrorMessage() {
+    	return errorMessage.getText();
     }
 }

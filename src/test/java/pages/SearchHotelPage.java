@@ -12,7 +12,6 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import utilis.ConfigReader;
 import utilis.Utility;
 
 public class SearchHotelPage {
@@ -60,10 +59,10 @@ public class SearchHotelPage {
 	@FindBy(id = "Reset")
 	WebElement resetButton;
 
-	@FindBy(xpath = "//span[@id='checkin_span']")
+	@FindBy(id = "checkin_span")
 	WebElement checkInErrorMsg;
 
-	@FindBy(xpath = "//span[@id='checkout_span']")
+	@FindBy(id = "checkout_span")
 	WebElement checkOutErrorMsg;
 
 	@FindBy(xpath = "//td[contains(text(),'Select Hotel')]")
@@ -74,6 +73,9 @@ public class SearchHotelPage {
 
 	@FindBy(linkText = "Search Hotel")
 	WebElement SearchHotel;
+	
+	@FindBy(className = "reg_error")  // General error message element if any
+	WebElement generalError;
 
 	// Constructor
 	public SearchHotelPage(WebDriver driver) {
@@ -109,8 +111,8 @@ public class SearchHotelPage {
 			childrenPerRoomDropdown.sendKeys(children);
 
 		searchButton.click();
-		Thread.sleep(500);
-		SearchHotel.click();
+		Thread.sleep(1000);
+		//SearchHotel.click();
 
 	}
 
@@ -138,21 +140,35 @@ public class SearchHotelPage {
 	public boolean isHotelListDisplayed() {
 		return firstHotelRadioButton.isDisplayed();
 	}
-
+	public boolean isErrorDisplayed() {
+	    return checkInErrorMsg.isDisplayed() || checkOutErrorMsg.isDisplayed() || generalError.isDisplayed();
+	}
+	
+	public String getDisplayedErrorMessage() {
+	    if (checkInErrorMsg.isDisplayed()) {
+	        return checkInErrorMsg.getText();
+	    } else if (checkOutErrorMsg.isDisplayed()) {
+	        return checkOutErrorMsg.getText();
+	    } else if (generalError.isDisplayed()) {
+	        return generalError.getText();
+	    }
+	    return "No error message displayed";
+	}
+	
 	public void testSearchWithPropertiesFile(){
 
 		SearchHotelPage searchPage = new SearchHotelPage(driver);
 		
-		locationDropdown.sendKeys(ConfigReader.getProperty("location"));
-	    hotelsDropdown.sendKeys(ConfigReader.getProperty("hotel"));
-	    roomTypeDropdown.sendKeys(ConfigReader.getProperty("roomType"));
-	    noOfRoomsDropdown.sendKeys(ConfigReader.getProperty("numRooms"));
+		locationDropdown.sendKeys(Utility.getProperty("location"));
+	    hotelsDropdown.sendKeys(Utility.getProperty("hotel"));
+	    roomTypeDropdown.sendKeys(Utility.getProperty("roomType"));
+	    noOfRoomsDropdown.sendKeys(Utility.getProperty("numRooms"));
 	    checkInDateField.clear();
-	    checkInDateField.sendKeys(ConfigReader.getProperty("checkIn"));
+	    checkInDateField.sendKeys(Utility.getProperty("checkIn"));
 	    checkOutDateField.clear();
-	    checkOutDateField.sendKeys(ConfigReader.getProperty("checkOut"));
-	    adultsPerRoomDropdown.sendKeys(ConfigReader.getProperty("adultsPerRoom"));
-	    childrenPerRoomDropdown.sendKeys(ConfigReader.getProperty("childrenPerRoom"));
+	    checkOutDateField.sendKeys(Utility.getProperty("checkOut"));
+	    adultsPerRoomDropdown.sendKeys(Utility.getProperty("adultsPerRoom"));
+	    childrenPerRoomDropdown.sendKeys(Utility.getProperty("childrenPerRoom"));
 	    searchButton.click();
 	    
 	}

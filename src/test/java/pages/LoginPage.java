@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.ProjectSpecification;
-import utilis.ConfigReader;
+import utilis.Utility;
 
 public class LoginPage extends ProjectSpecification{
 
@@ -44,6 +44,9 @@ public class LoginPage extends ProjectSpecification{
 	
 	@FindBy(className = "login_error") // Error class for invalid login
 	WebElement loginErrorMsg;
+	
+	@FindBy(xpath = "//span[@id='spanMessage']")
+	WebElement errorMessageLogin;
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -80,21 +83,23 @@ public class LoginPage extends ProjectSpecification{
 		return logoutBtn.isDisplayed();
 	}
 	
-    public boolean errorMessageDisplayed() {
-        return errorMessage.isDisplayed();
-    }
-    
 	public void loginFunction(String userName, String passWord) {
 		EnterUsername(userName);
 		EnterPassword(passWord);	
 		LoginBtn.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		logoutButton();  
 	}
 	
 	public void loginWithPropertyCredentials() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		String username = ConfigReader.getProperty("user.email");
-	    String password = ConfigReader.getProperty("user.password");
+		String username = Utility.getProperty("user.email");
+	    String password = Utility.getProperty("user.password");
 	    
 	    System.out.println("Logging in with: " + username + " | " + password);
 	    //loginFunction(username, password);
@@ -109,5 +114,24 @@ public class LoginPage extends ProjectSpecification{
 
     public boolean loginFailed() {
         return loginErrorMsg.isDisplayed();
+    }
+    public void Getloginerror() {
+        loginErrorMsg.getText();
+    }
+    
+    public boolean errorMessageDisplayed() {
+        try {
+            return errorMessageLogin.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public String getLoginErrorMessage() {
+        try {
+            return errorMessageLogin.getText();
+        } catch (Exception e) {
+            return "Error message element not found.";
+        }
     }
 }

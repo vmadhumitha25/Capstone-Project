@@ -19,7 +19,7 @@ public class ItineraryPage {
 	        PageFactory.initElements(driver, this);
 	    }
 
-	    @FindBy(xpath = "//input[@value='My Itinerary']")
+	    @FindBy(id = "my_itinerary")
 	    WebElement myItineraryBtn;
 
 	    @FindBy(id = "order_id_text")
@@ -32,6 +32,7 @@ public class ItineraryPage {
 	    WebElement cancelSelected;
 
 	    public void clickMyItinerary() {
+	    	
 	        myItineraryBtn.click();
 	    }
 

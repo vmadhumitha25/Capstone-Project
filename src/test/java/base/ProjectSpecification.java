@@ -38,9 +38,7 @@ import com.google.protobuf.ByteString.Output;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.LogoutPage;
-import utilis.ConfigReader;
 import utilis.Utility;
-import utilis.ExtentReportManager;
 import utilis.Listener;
 
 @Listeners(utilis.Listener.class)
@@ -68,11 +66,11 @@ public class ProjectSpecification extends Utility{
 	@BeforeMethod
 	//@Parameters({"browser", "url"})
 	public void launchingBrowserandLoadingURL(){
-			WebDriver driverInstance;
-			String browser = ConfigReader.getProperty("browser");
-			if (browser == null) {
-	            browser = ConfigReader.getProperty("browser"); // Read from config file
-	        }
+			//WebDriver driverInstance;
+			String browser = Utility.getProperty("browser");
+			/*if (browser == null) {
+	            browser = Utility.getProperty("browser"); // Read from config file
+	        }*/
 			//select the browser based on parameter
 			if(browser.equalsIgnoreCase("chrome")) {
 				driver = new ChromeDriver();
@@ -86,12 +84,12 @@ public class ProjectSpecification extends Utility{
 			
 		
 		// Launch the Application URL from properties file
-		driver.get(ConfigReader.getProperty("app.URL"));
+		driver.get(Utility.getProperty("app.URL"));
 		
 		driver.manage().window().maximize();
 		
 		// Set the Implicit Time 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(ConfigReader.getProperty("implicitWait"))));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(Utility.getProperty("implicitWait"))));
 		
 		 // Start Extent Report
        // extent = ExtentReportManager.getInstance();
@@ -127,8 +125,9 @@ public class ProjectSpecification extends Utility{
 	public void browserquit() {
 		 if (driver != null) {
 		        driver.quit();
-		        //driver = null;  // Reset the driver
-		 }
+		        driver = null;
+		    }
+
 	}
 	
     @AfterSuite
